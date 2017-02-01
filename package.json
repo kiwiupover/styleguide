@@ -1,0 +1,13 @@
+{
+  "name": "styleguide",
+  "keywords": [
+    "ember-addon",
+    "ember-engine"
+  ],
+  "dependencies": {
+    "ember-cli-htmlbars": "*",
+    "flexboxgrid-sass": "^8.0.5",
+    "ember-cli-sass": "6.1.1",
+    "ember-cli-babel": "*"
+  }
+}
