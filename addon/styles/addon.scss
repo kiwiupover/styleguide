@@ -1,9 +1,4 @@
 @import 'flexboxgrid-sass/dist/flexboxgrid';
-
-.styleguide {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  min-height: 100vh;
-  min-width: 320px;
-}
+@import 'colors';
+@import 'body';
+@import 'side-bar';

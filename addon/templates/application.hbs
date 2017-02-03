@@ -1,31 +1,22 @@
 <div class="styleguide">
   <div class="fg-row">
-    <div class="fg-col-xs-12 fg-col-sm-3 fg-col-md-2 fg-col-lg-1">
-      <div class="box-row">
-        side bar nav
-      </div>
+    <div class="side-bar fg-col-xs-3">
+      <nav class="pam">
+        <h4>Style Guide</h4>
+        <ul>
+          <li>{{link-to 'buttons' 'buttons'}}</li>
+          <li>colors</li>
+          <li>typography</li>
+          <li>forms</li>
+        </ul>
+        <h4>Components</h4>
+        <ul>
+          <li>action-button</li>
+        </ul>
+      </nav>
     </div>
-    <div class="fg-col-xs-12 fg-col-sm-9 fg-col-md-10 fg-col-lg-11">
-      <div class="box-row">
-        {{outlet}}
-        <h1>styleguide</h1>
-      </div>
-    </div>
-  </div>
-  <div class="fg-row">
-    <div class="nav-sidebar fg-col-xs-12 fg-col-sm-3 fg-col-md-2 fg-col-lg-1">
-      side bar nav
-    </div>
-    <div class="nav-sidebar fg-col-xs-12 fg-col-sm-9 fg-col-md-10 fg-col-lg-11">
+    <div class="fg-col-xs-9">
       {{outlet}}
-      <h1>styleguide</h1>
     </div>
   </div>
-
-  <div class="fg-row">
-  <div class="fg-col-xs-offset-3 fg-col-xs-9">
-    <div class="box">offset</div>
-  </div>
-</div>
-
 </div>

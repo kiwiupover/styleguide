@@ -1,0 +1,19 @@
+.side-bar {
+  padding: 20px 40px;
+  h4 {
+    font-weight: bold;
+    text-transform: uppercase;;
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+    color: rgba(0,0,0,.3);
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  ul {
+    list-style: none;
+  }
+}

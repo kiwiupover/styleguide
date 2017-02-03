@@ -9,5 +9,8 @@
     "flexboxgrid-sass": "^8.0.5",
     "ember-cli-sass": "6.1.1",
     "ember-cli-babel": "*"
+  },
+  "devDependencies": {
+    "ember-remarkable": "^3.6.0"
   }
 }

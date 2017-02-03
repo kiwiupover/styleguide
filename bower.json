@@ -1,0 +1,7 @@
+{
+  "name": "styleguide",
+  "dependencies": {
+    "remarkable": "1.7.1",
+    "highlightjs": "9.1.0"
+  }
+}
