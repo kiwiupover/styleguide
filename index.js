@@ -1,10 +1,6 @@
-/*jshint node:true*/
-var EngineAddon = require('ember-engines/lib/engine-addon');
-module.exports = EngineAddon.extend({
-  name: 'styleguide',
-  lazyLoading: true,
+/* eslint-env node */
+'use strict';
 
-  isDevelopingAddon: function() {
-    return true;
-  }
-});
+module.exports = {
+  name: 'styleguide'
+};

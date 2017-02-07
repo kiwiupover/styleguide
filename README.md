@@ -1,11 +1,11 @@
-# styleguide-two
+# styleguide
 
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd styleguide-two`
+* `cd styleguide`
 * `npm install`
 * `bower install`
 

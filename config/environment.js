@@ -1,11 +1,6 @@
-/*jshint node:true*/
+/* eslint-env node */
 'use strict';
 
-module.exports = function(environment) {
-  var ENV = {
-    modulePrefix: 'styleguide',
-    environment: environment
-  }
-
-  return ENV;
+module.exports = function(/* environment, appConfig */) {
+  return { };
 };
