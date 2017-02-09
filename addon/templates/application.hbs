@@ -1,22 +1,60 @@
 <div class="styleguide">
-  <div class="fg-row">
-    <div class="side-bar fg-col-xs-3">
-      <nav class="pam">
-        <h4>Style Guide</h4>
-        <ul>
-          <li>{{link-to 'buttons' 'buttons'}}</li>
-          <li>colors</li>
-          <li>typography</li>
-          <li>forms</li>
-        </ul>
-        <h4>Components</h4>
-        <ul>
-          <li>action-button</li>
-        </ul>
-      </nav>
-    </div>
-    <div class="fg-col-xs-9">
-      {{outlet}}
-    </div>
-  </div>
+
+{{#freestyle-guide
+  title='Ember Freestyle'
+  subtitle='Living Style Guide'
+  }}
+
+  {{#freestyle-section name='Visual Style' as |section|}}
+
+    {{#freestyle-subsection name='Typography' section=section}}
+
+      {{#freestyle-usage 'typography-open-sans' title='Open sans'}}
+        {{freestyle-typeface fontFamily='Open sans'}}
+      {{/freestyle-usage}}
+
+    {{/freestyle-subsection}}
+
+    {{#freestyle-subsection name='Color' section=section}}
+
+      {{#freestyle-usage title='Outdoosy Color Palette'}}
+        {{freestyle-palette
+        colorPalette=colorPalette
+
+        }}
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage title='Utility Palette'}}
+        {{freestyle-palette
+        colorPalette=grayPalette
+        title='Utility Palette'
+        }}
+      {{/freestyle-usage}}
+
+    {{/freestyle-subsection}}
+
+  {{/freestyle-section}}
+
+  {{#freestyle-section name='Components' as |section|}}
+    {{#freestyle-subsection name='Buttons' section=section}}
+      {{#freestyle-annotation}}
+        <h4>Primary Button</h4>
+        <button class='btn btn-primary' type="button" name="button">Primary</button>
+      {{/freestyle-annotation}}
+
+      {{#freestyle-annotation}}
+        <h4>Secondary Button</h4>
+        <button class='btn btn-secondary' type="button" name="button">Secondary</button>
+      {{/freestyle-annotation}}
+
+    {{/freestyle-subsection}}
+    {{#freestyle-subsection name='Review Stars' section=section}}
+
+      {{#freestyle-usage}}
+        {{review-stars score=3 count=5}}
+      {{/freestyle-usage}}
+
+    {{/freestyle-subsection}}
+  {{/freestyle-section}}
+{{/freestyle-guide}}
 </div>
