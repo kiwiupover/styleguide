@@ -20,13 +20,13 @@
   },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
+    "ember-cli-htmlbars": "^1.0.10",
     "ember-cli-sass": "6.1.1",
-    "ember-cli-htmlbars": "^1.0.10"
+    "ember-freestyle": "kiwiupover/ember-freestyle#update-ember-remarkable",
+    "ember-remarkable": "^3.6.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
-    "ember-freestyle": "kiwiupover/ember-freestyle#for-engine",
-    "ember-remarkable": "chrislopresto/ember-remarkable#highlightjs-css-compatibility-3.2.0",
     "broccoli-funnel": "^1.1.0",
     "ember-cli": "2.10.0",
     "ember-cli-dependency-checker": "^1.3.0",
