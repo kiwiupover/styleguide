@@ -4,6 +4,12 @@ $FreestyleUsage-maxWidth: $FreestyleGuide-maxWidth !default;
 .FreestyleUsage {
   max-width: $FreestyleUsage-maxWidth;
 
+  pre {
+    border: none;
+    border-radius: 0;
+    background: #f1f1f1;
+  }
+
   &-title {
     font-weight: bold;
     padding: 1rem 1rem 0;
@@ -24,7 +30,6 @@ $FreestyleUsage-maxWidth: $FreestyleGuide-maxWidth !default;
 
   &-snippet {
     pre {
-      font-size: .8rem;
       margin-top: 0;
 
       &.hljs {

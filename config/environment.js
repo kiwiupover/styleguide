@@ -3,9 +3,14 @@
 
 module.exports = function(environment) {
   const ENV = {
+    environment,
     modulePrefix: 'styleguide',
-    environment: environment
+    freestyle: {
+      snippetSearchPaths: ['tests/dummy/app', 'app/styles']
+    }
   }
+
+
 
   return ENV;
 };
