@@ -51,6 +51,12 @@
 
     {{/freestyle-subsection}}
 
+
+
+  {{/freestyle-section}}
+
+  {{#freestyle-section name='Atoms' as |section|}}
+
     {{#freestyle-subsection name='Buttons' section=section}}
       {{#freestyle-annotation}}
         <div class="mlx">
@@ -58,6 +64,32 @@
         </div>
       {{/freestyle-annotation}}
 
+    {{/freestyle-subsection}}
+
+    {{#freestyle-subsection name='Links' section=section}}
+        <div class="mlx">
+          <a href="#">a link</a>
+
+          <h3>A link in text</h3>
+          <p><a href="#">"How long has he been a member?"</a> he then said, turning to me; "not very long, <a href="#">I rather guess, young man.</a>"</p>
+          <h3>A link in a title</h3>
+          <h2><a href="#">a link</a></h2>
+        </div>
+
+    {{/freestyle-subsection}}
+
+    {{#freestyle-subsection name='Checkbox' section=section}}
+      <div class="mlx">
+        <input type="checkbox" checked="checked">
+        <input type="checkbox">
+      </div>
+    {{/freestyle-subsection}}
+
+    {{#freestyle-subsection name='Radio Button' section=section}}
+      <div class="mlx">
+        <input type="radio" checked="checked">
+        <input type="radio">
+      </div>
     {{/freestyle-subsection}}
 
   {{/freestyle-section}}

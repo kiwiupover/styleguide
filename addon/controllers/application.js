@@ -8,11 +8,13 @@ export default FreestyleController.extend({
   store: inject.service(),
   emberFreestyle: inject.service(),
   showRental: null,
+  showReview: null,
   showCode: computed.alias('emberFreestyle.showCode'),
 
   init() {
     this._super(...arguments);
     this._getShowRental();
+    this._getReview();
   },
 
   colorPalette: {
@@ -87,13 +89,19 @@ export default FreestyleController.extend({
       full: true,
       limit: 1,
       near:"37.7749295,-122.41941550000001",
-      offset:0,
+      offset:5,
       radius:50,
       sleeps:1
     };
 
     return this.get('store').query('rental', filter).then((data) => {
       return this.set('showRental', data.get('firstObject'));
+    });
+  },
+
+  _getReview() {
+    this.get('store').query('review', { rental_id: 2987 }).then((data) => {
+      this.set('showReview', data.get('firstObject'));
     });
   }
 
