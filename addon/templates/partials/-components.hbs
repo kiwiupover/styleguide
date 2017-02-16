@@ -1,0 +1,19 @@
+{{#freestyle-section name='Components' as |section|}}
+  {{#freestyle-subsection name='Show Rental' section=section}}
+
+    {{#freestyle-usage "show-rental"}}
+      <div class="fg-row fg-col-xs">
+        {{show-rental model=showRental}}
+      </div>
+    {{/freestyle-usage}}
+
+  {{/freestyle-subsection}}
+
+  {{#freestyle-subsection name='Review Stars' section=section}}
+
+    {{#freestyle-usage "review-stars"}}
+      {{review-stars score=3 count=5}}
+    {{/freestyle-usage}}
+
+  {{/freestyle-subsection}}
+{{/freestyle-section}}
