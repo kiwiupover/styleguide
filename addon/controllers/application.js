@@ -43,7 +43,12 @@ export default FreestyleController.extend({
       base: '#FFEB3B',
       variable: 'none'
     },
-    backgrounddd: {
+    red: {
+      name: 'rental_id',
+      base: '#FF4444',
+      variable: '$red-color'
+    },
+    teal: {
       name: 'Ryan Teal',
       base: '#1CCDC7',
       variable: '$ryans-color'
