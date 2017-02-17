@@ -22,7 +22,7 @@
     "ember-cli-babel": "^5.1.7",
     "ember-cli-htmlbars": "^1.0.10",
     "ember-cli-sass": "6.1.1",
-    "ember-freestyle": "kiwiupover/ember-freestyle#update-ember-remarkable",
+    "ember-freestyle": "kiwiupover/ember-freestyle",
     "ember-remarkable": "^3.6.0"
   },
   "devDependencies": {

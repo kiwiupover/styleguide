@@ -1630,9 +1630,9 @@ ember-export-application-global@^1.0.5:
   dependencies:
     ember-cli-babel "^5.1.10"
 
-ember-freestyle@kiwiupover/ember-freestyle#update-ember-remarkable:
+ember-freestyle@kiwiupover/ember-freestyle:
   version "0.2.13"
-  resolved "https://codeload.github.com/kiwiupover/ember-freestyle/tar.gz/76714c8762196c9d53fe6e62727a21dc3c0fcd9a"
+  resolved "https://codeload.github.com/kiwiupover/ember-freestyle/tar.gz/a7074a9495bc2170116d618fe9a7f6c76e78f07c"
   dependencies:
     broccoli-flatiron "0.0.0"
     broccoli-funnel "^1.0.1"
@@ -1660,18 +1660,12 @@ ember-qunit@^2.0.0-beta.1:
   dependencies:
     ember-test-helpers "^0.6.0-beta.1"
 
-ember-remarkable@^3.6.0:
+ember-remarkable@3.6.0, ember-remarkable@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/ember-remarkable/-/ember-remarkable-3.6.0.tgz#e7419268243e51dbe634dd2d522eb5b7fd338059"
   dependencies:
     ember-cli-babel "^5.1.6"
     ember-cli-htmlbars "^1.0.3"
-
-ember-remarkable@chrislopresto/ember-remarkable#highlightjs-css-compatibility-3.2.0:
-  version "3.2.0"
-  resolved "https://codeload.github.com/chrislopresto/ember-remarkable/tar.gz/490c9fd60a6599fcb5f25975fe8c087fb5b8ffb5"
-  dependencies:
-    ember-cli-babel "^5.1.6"
 
 ember-resolver@^2.0.3:
   version "2.1.1"
