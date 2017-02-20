@@ -31,3 +31,9 @@ $FreestyleGuide-color--background: #fff !default;
 @import 'components/freestyle-menu';
 @import 'components/freestyle-snippet';
 @import 'components/freestyle-typeface';
+
+.FreestyleGuide-font-style-list {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #ddd;
+}

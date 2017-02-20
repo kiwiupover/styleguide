@@ -1,0 +1,33 @@
+{{#freestyle-subsection name='Input Field' section=section}}
+  {{#freestyle-collection title='Input Field In Every State' inline=true as |collection|}}
+    {{#freestyle-variant collection=collection key='normal'}}
+      {{#freestyle-usage }}
+        {{input-field
+          value='Dave'
+          label='First Name'
+          error='First name is required'
+          showErrors=false}}
+      {{/freestyle-usage}}
+    {{/freestyle-variant}}
+
+    {{#freestyle-variant collection=collection key='error-state'}}
+      {{#freestyle-usage}}
+        {{input-field
+          value='Dave'
+          label='First Name'
+          error=(hash message='First name is required')
+          showErrors=true}}
+      {{/freestyle-usage}}
+    {{/freestyle-variant}}
+
+    {{#freestyle-variant collection=collection key='with-placeholder'}}
+      {{#freestyle-usage}}
+        {{input-field
+          placeholder="Please enter your first name"
+          label='First Name'
+          error=(hash message='First name is required')
+          showErrors=false}}
+      {{/freestyle-usage}}
+    {{/freestyle-variant}}
+  {{/freestyle-collection}}
+{{/freestyle-subsection}}

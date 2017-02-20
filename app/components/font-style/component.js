@@ -1,0 +1,1 @@
+export { default } from 'ember-styleguide/components/font-style/component';

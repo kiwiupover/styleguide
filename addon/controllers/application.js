@@ -89,6 +89,13 @@ export default FreestyleController.extend({
     }
   },
 
+  distanceOptions: [
+    { display: "50 Miles", value: 50 },
+    { display: "100 Miles", value: 100 },
+    { display: "150 Miles", value: 150 },
+    { display: "200 Miles", value: 200 }
+  ],
+
   _getShowRental(){
     let filter = {
       full: true,

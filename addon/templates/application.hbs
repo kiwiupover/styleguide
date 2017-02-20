@@ -32,16 +32,15 @@
     {{/freestyle-subsection}}
 
     {{#freestyle-subsection name='Typography' section=section}}
+
       <div class="fg-row plx">
-        <div class="fg-col-xs-6">
-          <h1>H1 But these two harpoons</h1>
-          <h2>H2 The boys laughed and lay down again in the sand</h2>
-          <h3>H3 At two o'clock the guide entered a thick forest</h3>
-          <h4>H4 So you understand the roaring wave of</h4>
-          <h5>H5 'Come back!' the Caterpillar called after her. 'I've something important  to say!'</h5>
-          <h6>H6 The tinsmiths looked the Woodman over carefully</h6>
-          <p>Paragraph tag: Which brought them back again to the beginning of the conversation.  Alice felt a little irritated at the Caterpillar's making such VERY  short remarks, and she drew herself up and said, very gravely, 'I think,  you ought to tell me who YOU are, first.'</p>
-        </div>
+        {{font-style name='font-title' text='This is a big page title heading'}}
+        {{font-style name='font-subtitle' text='The boys laughed and lay down again in the sand'}}
+        {{font-style name='font-section-title' text="At two o'clock the guide entered a thick forest"}}
+        {{font-style name='font-body-title' text="So you understand the roaring wave of"}}
+        {{font-style name='font-body-featured' text="Just the good ol' boys, never meanin' no harm. Beats all you've ever saw, been in trouble with the law since the day they was born."}}
+        {{font-style name='font-body-list' text="The tinsmiths"}}
+        {{font-style name='font-sub-body' text="Which brought them back again to the beginning of the conversation.  Alice felt a little irritated at the Caterpillar's making such VERY  short remarks, and she drew herself up and said, very gravely 'I think,  you ought to tell me who YOU are, first. Just the good ol' boys, never meanin' no harm. Beats all you've ever saw, been in trouble with the law since the day they was born.'"}}
       </div>
     {{/freestyle-subsection}}
 
@@ -62,8 +61,6 @@
       {{/freestyle-usage}}
 
     {{/freestyle-subsection}}
-
-
 
   {{/freestyle-section}}
 
@@ -90,6 +87,7 @@
 
     {{/freestyle-subsection}}
 
+
     {{#freestyle-subsection name='Checkbox' section=section}}
       <div class="mlx">
         <input type="checkbox" checked="checked">
@@ -104,6 +102,32 @@
       </div>
     {{/freestyle-subsection}}
 
+  {{/freestyle-section}}
+
+  {{#freestyle-section name='Form Elements' as |section|}}
+    {{partial 'partials/input-field'}}
+
+    {{#freestyle-subsection name='Select Tag' section=section}}
+
+      {{#freestyle-usage 'select-tag' title='Select Tag'}}
+        {{select-tag
+          content=distanceOptions
+          selectClass="form-control"
+          value=(mut (get rvSearch "radius"))}}
+      {{/freestyle-usage}}
+
+    {{/freestyle-subsection}}
+
+    {{#freestyle-subsection name='Checkbox' section=section}}
+
+      {{#freestyle-usage 'form-checkbox' title='Checkbox'}}
+      <label>
+        {{input id='id23' type="checkbox" checked=isSelected}}
+        <label for='id23'>checkbox label</label>
+      </label>
+      {{/freestyle-usage}}
+
+    {{/freestyle-subsection}}
   {{/freestyle-section}}
 
   {{partial 'partials/components'}}
