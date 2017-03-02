@@ -7,10 +7,12 @@ module.exports = function(environment) {
     modulePrefix: 'styleguide',
     freestyle: {
       snippetSearchPaths: ['tests/dummy/app', 'app/styles']
+    },
+
+    coffeeOptions: {
+      blueprints: false
     }
   }
-
-
 
   return ENV;
 };
