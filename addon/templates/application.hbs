@@ -9,10 +9,6 @@
 
     {{#freestyle-subsection name='Fonts' section=section}}
 
-      {{!-- {{#freestyle-usage title='Open sans'}}
-        {{freestyle-typeface fontFamily='Open sans' fontWeight=700"}}
-      {{/freestyle-usage}} --}}
-
       {{#freestyle-usage title='Sentinel Book'}}
         {{freestyle-typeface fontFamily='Sentinel'}}
       {{/freestyle-usage}}
@@ -107,7 +103,7 @@
   {{#freestyle-section name='Form Elements' as |section|}}
     {{partial 'partials/input-field'}}
 
-    {{#freestyle-subsection name='Select Tag' section=section}}
+    {{!-- {{#freestyle-subsection name='Select Tag' section=section}}
 
       {{#freestyle-usage 'select-tag' title='Select Tag'}}
         {{select-tag
@@ -116,7 +112,7 @@
           value=(mut (get rvSearch "radius"))}}
       {{/freestyle-usage}}
 
-    {{/freestyle-subsection}}
+    {{/freestyle-subsection}} --}}
 
     {{#freestyle-subsection name='Checkbox' section=section}}
 

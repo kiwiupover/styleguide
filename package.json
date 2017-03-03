@@ -19,7 +19,9 @@
     "test": "ember try:each"
   },
   "dependencies": {
+    "core-addon": "git+ssh://git@github.com/outdoorsy/ember-cli-core-addon.git",
     "ember-cli-babel": "^5.1.7",
+    "ember-cli-coffeescript": "1.14.0",
     "ember-cli-htmlbars": "^1.0.10",
     "ember-cli-sass": "6.1.1",
     "ember-freestyle": "kiwiupover/ember-freestyle",
