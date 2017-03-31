@@ -8,7 +8,7 @@ const EngineAddon = require('ember-engines/lib/engine-addon');
 
 module.exports = EngineAddon.extend({
   name: 'styleguide',
-  lazyLoading: false,
+  lazyLoading: true,
 
   included: function(app) {
     this._super.included(app);
