@@ -24,7 +24,9 @@
     "ember-cli-coffeescript": "1.14.0",
     "ember-cli-htmlbars": "^1.0.10",
     "ember-cli-sass": "6.1.1",
-    "ember-freestyle": "kiwiupover/ember-freestyle#highlightjs-markdown-it"
+    "ember-freestyle": "kiwiupover/ember-freestyle#highlightjs-markdown-it",
+    "ember-markdown-it": "github:HeroicEric/ember-markdown-it#ca3a8ff2d59d64ed6d933730a25ee4793401f955",
+    "highlightjs": "^9.10.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -39,9 +41,7 @@
     "ember-engines": "0.4.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.6.0",
-    "ember-markdown-it": "github:HeroicEric/ember-markdown-it#ca3a8ff2d59d64ed6d933730a25ee4793401f955",
     "ember-resolver": "^2.0.3",
-    "highlightjs": "^9.10.0",
     "flexboxgrid-sass": "^8.0.5",
     "loader.js": "^4.1.0"
   },

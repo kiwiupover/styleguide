@@ -8,33 +8,31 @@ const EngineAddon = require('ember-engines/lib/engine-addon');
 
 module.exports = EngineAddon.extend({
   name: 'styleguide',
-  lazyLoading: true,
+  lazyLoading: false,
 
   included: function(app) {
     this._super.included(app);
-    var target = app || parentAddon;
-    if (target.import) {
 
-      target.import('vendor/highlight.pack.js', {
-        exports: {
-          'highlight.js': [
-            'default',
-            'highlight',
-            'highlightAuto',
-            'highlightBlock'
-          ]
-        }
-      });
+    this.import('vendor/highlight.pack.js', {
+      exports: {
+        'highlight.js': [
+          'default',
+          'highlight',
+          'highlightAuto',
+          'highlightBlock'
+        ]
+      }
+    });
 
-      target.import('vendor/markdown-it.min.js');
+    this.import('vendor/markdown-it.min.js');
 
-      target.import('vendor/shims/highlight.js');
-      target.import('vendor/shims/markdown-it.js');
-    }
-
+    this.import('vendor/shims/highlight.js');
+    this.import('vendor/shims/markdown-it.js');
   },
 
-  treeForVendor(vendorTree) {
+  treeForVendor() {
+    var tree = this._super.treeForVendor.apply(this, arguments);
+
     let markdownItTree = new Funnel(path.join(this.project.root, 'node_modules', 'markdown-it', 'dist'), {
       files: ['markdown-it.min.js'],
     });
@@ -43,6 +41,6 @@ module.exports = EngineAddon.extend({
       files: ['highlight.pack.js'],
     });
 
-    return new MergeTrees([vendorTree, markdownItTree, highlightTree]);
+    return new MergeTrees([tree, markdownItTree, highlightTree]);
   }
 });
