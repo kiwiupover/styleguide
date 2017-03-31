@@ -1,7 +1,7 @@
 {
   "name": "styleguide",
   "dependencies": {
-    "ember": "2.10.2",
+    "ember": "2.12.0",
     "ember-cli-shims": "0.1.3"
   }
 }
