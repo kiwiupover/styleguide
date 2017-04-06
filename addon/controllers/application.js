@@ -98,12 +98,11 @@ export default FreestyleController.extend({
 
   _getShowRental(){
     let filter = {
-      full: true,
       limit: 1,
       near:"37.7749295,-122.41941550000001",
       offset:5,
       radius:50,
-      sleeps:1
+      sleeps:2
     };
 
     return this.get('store').query('rental', filter).then((data) => {

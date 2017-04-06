@@ -3,7 +3,7 @@
 
     {{#freestyle-usage "show-rental"}}
       <div class="fg-row fg-col-xs">
-        {{show-rental model=showRental}}
+        {{show-rental rental=showRental}}
       </div>
     {{/freestyle-usage}}
 
@@ -11,22 +11,22 @@
 
   {{#freestyle-subsection name='Show Review' section=section}}
 
-    {{#freestyle-usage "show-review"}}
+    {{!-- {{#freestyle-usage "show-review"}}
       <div class="fg-row fg-col-xs">
         {{show-review review=showReview}}
       </div>
-    {{/freestyle-usage}}
+    {{/freestyle-usage}} --}}
 
   {{/freestyle-subsection}}
 
   {{#freestyle-subsection name='Pagination' section=section}}
 
-    {{#freestyle-usage "pagination-component"}}
+    {{!-- {{#freestyle-usage "pagination-component"}}
       {{pagination-component
         total=62
         perPage=12
         current=2}}
-    {{/freestyle-usage}}
+    {{/freestyle-usage}} --}}
 
   {{/freestyle-subsection}}
 
@@ -53,9 +53,9 @@
 
   {{#freestyle-subsection name='Review Stars' section=section}}
 
-    {{#freestyle-usage "review-stars"}}
+    {{!-- {{#freestyle-usage "review-stars"}}
       {{review-stars score=3 count=5}}
-    {{/freestyle-usage}}
+    {{/freestyle-usage}} --}}
 
   {{/freestyle-subsection}}
 {{/freestyle-section}}
