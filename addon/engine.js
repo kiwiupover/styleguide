@@ -10,7 +10,8 @@ const Eng = Engine.extend({
   Resolver,
   dependencies: {
     services: [
-      'store'
+      'store',
+      'ajax'
     ]
   }
 });
