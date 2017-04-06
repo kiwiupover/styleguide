@@ -3630,7 +3630,7 @@ osenv@0, osenv@^0.1.0, osenv@^0.1.3, osenv@^0.1.4:
 
 "outdoorsy-addon@git+ssh://git@github.com/outdoorsy/outdoorsy-addon.git#adding-more-components":
   version "0.0.0"
-  resolved "git+ssh://git@github.com/outdoorsy/outdoorsy-addon.git#6871cd62a743b14d3361406d32b681d6f1bf1be4"
+  resolved "git+ssh://git@github.com/outdoorsy/outdoorsy-addon.git#7ca660b51aec2933194bdc0e78b8f9ee41a94572"
   dependencies:
     ember-cli-babel "^5.1.7"
     ember-cli-htmlbars "^1.0.10"
