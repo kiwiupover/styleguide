@@ -1149,7 +1149,7 @@ copy-dereference@^1.0.0:
 
 "core-addon@git+ssh://git@github.com/outdoorsy/ember-cli-core-addon.git#master":
   version "0.0.0"
-  resolved "git+ssh://git@github.com/outdoorsy/ember-cli-core-addon.git#254672af020ea0ff99403c54ef6603c11e986bdf"
+  resolved "git+ssh://git@github.com/outdoorsy/ember-cli-core-addon.git#e590aa8db5906b26199b62825c8bc446ab619aec"
   dependencies:
     bower "^1.8.0"
     ember-cli-babel "^5.1.7"
